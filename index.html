@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adbirds Global</title>
+    <meta name="description" content="Brief marketing description for Adbirds Global" />
+    <link rel="canonical" href="https://www.example.com/" />
+    <meta property="og:title" content="Adbirds Global" />
+    <meta property="og:description" content="Experts in Digital Marketing Services for Global Brands" />
+    <meta property="og:image" content="URL_TO_SHARE_IMAGE" />
+    <meta property="og:url" content="https://www.example.com/" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,8 +22,16 @@
     </style>
   </head>
   <body class="bg-black text-white">
-    <!-- HEADER include -->
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <header class="w-full px-6 py-4 border-b border-white/10 flex items-center justify-between">
+      <img src="./assets/logo-adbirds.svg" alt="Adbirds Logo" class="h-6 md:h-8" />
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#" class="hover:text-blue-500">Services</a>
+        <a href="#" class="hover:text-blue-500">Portfolio</a>
+        <a href="#" class="hover:text-blue-500">Our Story</a>
+        <a href="#" class="bg-blue-600 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-blue-500 transition">Contact</a>
+      </nav>
+    </header>
 
     <!-- HERO -->
     <section class="relative overflow-hidden">
@@ -42,6 +56,5 @@
       <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500 opacity-20 blur-3xl -z-10"></div>
     </section>
 
-    <script src="./js/main.js"></script>
   </body>
 </html>
