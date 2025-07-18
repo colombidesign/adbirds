@@ -1,23 +1,29 @@
-<header class="w-full px-6 py-4 flex items-center justify-between md:px-12 md:py-16 relative">
-  <!-- Burger (Mobile only) -->
-  <button id="menu-toggle" class="md:hidden flex items-center z-50">
-    <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
-    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+<header class="w-full bg-black text-white px-6 py-4 md:px-12 md:py-16 flex items-end justify-between relative">
+  <!-- Burger menu (mobile only) -->
+  <button id="menu-toggle" class="flex md:hidden items-center z-50">
+    <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path d="M6 18L18 6M6 6l12 12" />
+    </svg>
   </button>
 
   <!-- Logo -->
-  <a href="/" class="flex-shrink-0">
-    <img src="assets/logo.svg" alt="Adbirds logo" class="h-8 mx-auto" />
+  <a href="/" class="mx-auto md:mx-0 w-52 h-12 flex items-center justify-center md:w-72 md:h-16">
+    <img src="assets/logo.svg" alt="Adbirds logo" class="h-full object-contain" />
   </a>
 
-  <!-- Contact button (always visible) -->
-  <a href="#contact" class="px-4 py-2 bg-blue-600 rounded-3xl shadow-[0_2px_24px_rgba(163,188,245,1)] outline outline-2 -outline-offset-2 outline-blue-500 flex items-center gap-2 text-white text-sm font-bold uppercase font-['Outfit'] leading-[1.2] hover:bg-blue-700 transition">
-    <img src="assets/mail.svg" alt="Contact" class="w-5 h-5" />
-    <span class="hidden sm:inline">Contact</span>
+  <!-- Contact (sempre visibile) -->
+  <a href="#contact" class="flex-shrink-0">
+    <div class="px-6 py-3 bg-blue-600 rounded-3xl shadow-[0_2px_24px_rgba(163,188,245,1)] outline outline-2 -outline-offset-2 outline-blue-500 flex items-center gap-3">
+      <img src="assets/mail.svg" alt="Contact" class="w-6 h-6" />
+      <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-[1.2] hidden sm:inline">Contact</span>
+    </div>
   </a>
 
-  <!-- Full nav (Desktop only) -->
-  <nav class="hidden md:flex items-center gap-6 absolute right-0 top-full md:static md:top-auto md:right-auto md:flex-row">
+  <!-- Desktop nav -->
+  <nav class="hidden md:flex items-end gap-6 absolute right-12 bottom-16">
     <!-- Services -->
     <div class="pl-8 pr-6 py-3 bg-zinc-800 rounded-3xl shadow-[0_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center gap-3">
       <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-[1.2]">Services</span>
@@ -35,13 +41,13 @@
       <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-[1.2]">Our Story</span>
     </div>
 
-    <!-- Social -->
+    <!-- Socials -->
     <div class="flex items-center gap-3">
       <a href="#" class="px-3 py-2 bg-zinc-800 rounded-3xl shadow-[0_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center justify-center">
-        <img src="assets/instagram.svg" alt="Instagram" class="w-6 h-6" />
+        <img src="assets/instagram.svg" alt="Instagram" class="w-8 h-8" />
       </a>
       <a href="#" class="px-3 py-2 bg-zinc-800 rounded-3xl shadow-[0_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center justify-center">
-        <img src="assets/medium.svg" alt="Medium" class="w-6 h-6" />
+        <img src="assets/medium.svg" alt="Medium" class="w-8 h-8" />
       </a>
     </div>
   </nav>
