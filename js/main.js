@@ -21,18 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Inizializzazione del menu mobile dopo il render
         var toggle = document.getElementById('menu-toggle');
-        var menu = document.getElementById('mobile-menu');
-        var burger = document.getElementById('burger-icon');
-        var close = document.getElementById('close-icon');
-
-        if (toggle && menu && burger && close) {
-          toggle.addEventListener('click', function () {
-            var isOpen = !menu.classList.contains('hidden');
-            menu.classList.toggle('hidden');
-            burger.classList.toggle('hidden', !isOpen);
-            close.classList.toggle('hidden', isOpen);
-          });
-        }
+        var mobileMenu = document.getElementById('mobile-menu');
+        var burgerIcon = document.getElementById('burger-icon');
+        var closeIcon = document.getElementById('close-icon');
+      
+        toggle.addEventListener('click', function () {
+          var isOpen = !mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden');
+          burgerIcon.classList.toggle('hidden', !isOpen);
+          closeIcon.classList.toggle('hidden', isOpen);
+        });
       }
     })
     .catch(function (err) {
