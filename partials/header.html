@@ -1,42 +1,46 @@
-<!-- partials/header.html -->
-<header class="w-full h-full px-12 py-16 flex justify-between items-end">
+<header class="px-12 py-16 inline-flex justify-start items-end gap-[537px]">
   <!-- Logo -->
-  <a href="/" class="flex items-center gap-2">
-    <img src="assets/logo.svg" alt="Adbirds logo" class="h-8" />
+  <a href="/" class="w-72 h-16 flex items-center">
+    <img src="assets/logo.svg" alt="Adbirds logo" class="h-full object-contain" />
   </a>
 
-  <!-- Navigation -->
-  <nav class="flex items-center gap-6">
+  <!-- Menu -->
+  <nav class="flex justify-start items-start gap-6">
+
     <!-- Services -->
-    <button class="px-8 py-3 bg-[#1D2426] text-white text-sm font-bold uppercase font-[Outfit] leading-6 rounded-full ring-1 ring-[#CCD5EB] flex items-center gap-2 shadow-[0_2px_24px_rgba(255,255,255,0.3)] hover:bg-[#2B2F31] transition">
-      Services
-      <img src="assets/arrow-down.svg" alt="" class="w-4 h-4" />
-    </button>
+    <div class="pl-8 pr-6 py-3 bg-zinc-800 rounded-3xl shadow-[0px_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center gap-3">
+      <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-normal">Services</span>
+      <img src="assets/caret-down.svg" alt="Dropdown" class="w-6 h-6" />
+    </div>
 
     <!-- Portfolio -->
-    <button class="px-8 py-3 bg-[#1D2426] text-white text-sm font-bold uppercase font-[Outfit] leading-6 rounded-full ring-1 ring-[#CCD5EB] flex items-center gap-2 shadow-[0_2px_24px_rgba(255,255,255,0.3)] hover:bg-[#2B2F31] transition">
-      Portfolio
-      <img src="assets/arrow-down.svg" alt="" class="w-4 h-4" />
-    </button>
+    <div class="pl-8 pr-6 py-3 bg-zinc-800 rounded-3xl shadow-[0px_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center gap-3">
+      <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-normal">Portfolio</span>
+      <img src="assets/caret-down.svg" alt="Dropdown" class="w-6 h-6" />
+    </div>
 
     <!-- Our Story -->
-    <button class="px-8 py-3 bg-[#1D2426] text-white text-sm font-bold uppercase font-[Outfit] leading-6 rounded-full ring-1 ring-[#CCD5EB] flex items-center shadow-[0_2px_24px_rgba(255,255,255,0.3)] hover:bg-[#2B2F31] transition">
-      Our Story
-    </button>
+    <div class="px-8 py-3 bg-zinc-800 rounded-3xl shadow-[0px_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 inline-flex flex-col justify-start items-start gap-8">
+      <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-normal">Our Story</span>
+    </div>
 
     <!-- Contact -->
-    <button class="px-8 py-3 bg-[#3369E8] text-white text-sm font-bold uppercase font-[Outfit] leading-6 rounded-full ring-2 ring-[#4778EB] shadow-[0_2px_24px_#A3BCF5] flex items-center gap-2 hover:bg-[#447AF0] transition">
-      <img src="assets/mail.svg" alt="Contact" class="w-5 h-5" />
-      Contact
-    </button>
+    <div class="px-8 py-3 bg-blue-600 rounded-3xl shadow-[0px_2px_24px_rgba(163,188,245,1)] outline outline-2 -outline-offset-2 outline-blue-500 flex items-center gap-3">
+      <img src="assets/mail.svg" alt="Contact" class="w-6 h-6" />
+      <span class="text-white text-xl font-bold font-['Outfit'] uppercase leading-normal">Contact</span>
+    </div>
 
-    <!-- Social Icons -->
-    <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#1D2426] rounded-full ring-1 ring-[#CCD5EB] shadow-[0_2px_24px_rgba(255,255,255,0.3)] hover:bg-[#2B2F31] transition">
-      <img src="assets/instagram.svg" alt="Instagram" class="w-5 h-5" />
-    </a>
+    <!-- Socials -->
+    <div class="flex items-center gap-3">
+      <!-- Instagram -->
+      <a href="#" class="px-3 py-2 bg-zinc-800 rounded-3xl shadow-[0px_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center justify-center overflow-hidden">
+        <img src="assets/instagram.svg" alt="Instagram" class="w-8 h-8" />
+      </a>
+      <!-- Medium -->
+      <a href="#" class="px-3 py-2 bg-zinc-800 rounded-3xl shadow-[0px_2px_24px_rgba(255,255,255,0.3)] outline outline-2 -outline-offset-2 outline-slate-300 flex items-center justify-center">
+        <img src="assets/medium.svg" alt="Medium" class="w-8 h-8" />
+      </a>
+    </div>
 
-    <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#1D2426] rounded-full ring-1 ring-[#CCD5EB] shadow-[0_2px_24px_rgba(255,255,255,0.3)] hover:bg-[#2B2F31] transition">
-      <span class="text-white font-semibold text-sm">M</span>
-    </a>
   </nav>
 </header>
