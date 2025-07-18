@@ -14,8 +14,25 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(function () {
           var hero = document.getElementById('hero');
           var headerHeight = placeholder.offsetHeight;
-          hero.style.height = `calc(100vh - ${headerHeight}px)`;
+          if (hero) {
+            hero.style.height = `calc(100vh - ${headerHeight}px)`;
+          }
         });
+
+        // Inizializzazione del menu mobile dopo il render
+        var toggle = document.getElementById('menu-toggle');
+        var menu = document.getElementById('mobile-menu');
+        var burger = document.getElementById('burger-icon');
+        var close = document.getElementById('close-icon');
+
+        if (toggle && menu && burger && close) {
+          toggle.addEventListener('click', function () {
+            var isOpen = !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            burger.classList.toggle('hidden', !isOpen);
+            close.classList.toggle('hidden', isOpen);
+          });
+        }
       }
     })
     .catch(function (err) {
